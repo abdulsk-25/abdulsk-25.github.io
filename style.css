@@ -47,7 +47,9 @@ font-weight:500;
 transition:0.3s;
 }
 
-.nav-links a:hover
+.nav-links a:hover{
+color:#38bdf8;
+}
 
 /* Hero */
 
@@ -215,6 +217,17 @@ transition:0.3s;
 transform:scale(1.05);
 }
 
+.project-details{
+display:none;
+margin-top:15px;
+padding:15px;
+background:#0f172a;
+border-left:4px solid #38bdf8;
+border-radius:8px;
+line-height:1.8;
+color:#cbd5e1;
+}
+
 /* Certifications */
 
 .cert-grid{
@@ -272,67 +285,6 @@ text-align:center;
 background:#020617;
 }
 
-/* Modal */
-
-.modal{
-display:none;
-position:fixed;
-left:0;
-top:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.8);
-z-index:9999;
-}
-
-.modal-content{
-background:#1e293b;
-width:80%;
-max-width:700px;
-margin:8% auto;
-padding:30px;
-border-radius:15px;
-position:relative;
-animation:popup 0.3s ease;
-}
-
-.close-btn{
-position:absolute;
-right:20px;
-top:15px;
-font-size:30px;
-cursor:pointer;
-color:white;
-}
-
-.close-btn:hover
-
-#modalTitle{
-color:#38bdf8;
-margin-bottom:20px;
-}
-
-#modalDescription{
-line-height:1.8;
-margin-bottom:20px;
-}
-
-#modalTech{
-color:#38bdf8;
-font-weight:600;
-}
-
-@keyframes popup{
-from{
-transform:scale(0.8);
-opacity:0;
-}
-to{
-transform:scale(1);
-opacity:1;
-}
-}
-
 /* Mobile */
 
 @media(max-width:768px){
@@ -341,22 +293,20 @@ opacity:1;
 display:none;
 }
 
+.hero{
+padding-top:100px;
+}
+
 .hero h1{
 font-size:2rem;
 }
 
-.modal-content{
-width:90%;
-margin:20% auto;
+.hero h3{
+font-size:1rem;
 }
-.project-details{
-display:none;
-margin-top:15px;
-padding:15px;
-background:#0f172a;
-border-left:4px solid #38bdf8;
-border-radius:8px;
-line-height:1.7;
-color:#cbd5e1;
+
+.section{
+padding:80px 5%;
 }
+
 }
